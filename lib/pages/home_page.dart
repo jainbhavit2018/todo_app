@@ -25,7 +25,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // bgcolor
       backgroundColor: Colors.blue[200],
+
+      //appBar
       appBar: AppBar(
         title: const Text(
           'TO-DO',
@@ -34,6 +37,13 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.blue,
         centerTitle: true,
       ),
+
+      // + button
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+      ),
+
+      // body
       body: ListView.builder(
         itemCount: toDoList.length,
         itemBuilder: (context, index) {
