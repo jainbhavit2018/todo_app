@@ -15,9 +15,14 @@ class ToDoTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
+      // padding
       padding: const EdgeInsets.only(left: 25, right: 25, top: 25),
+
+      // tile
       child: Container(
+        // internal padding
         padding: const EdgeInsets.all(10),
+
         decoration: BoxDecoration(
           color: Colors.blue,
           borderRadius: BorderRadius.circular(12),
@@ -32,6 +37,8 @@ class ToDoTile extends StatelessWidget {
             ),
           ],
         ),
+
+        // wrapped checkbox and task name in a row
         child: Row(
           children: [
             //checkbox
